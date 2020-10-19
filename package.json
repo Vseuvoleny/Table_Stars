@@ -1,0 +1,21 @@
+{
+  "name": "stars-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel src -d dev"
+  },
+  "author": "Arthur Santalov <Debruit63@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.27.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1"
+  }
+}
