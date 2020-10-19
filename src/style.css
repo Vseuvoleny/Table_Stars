@@ -1,0 +1,149 @@
+*,
+*:after,
+*::before {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  display: grid;
+  grid-template-areas: "tables" "settings";
+  grid-template-rows: auto;
+  place-content: center;
+  margin-top: 30px;
+}
+
+.table_page {
+  grid-area: tables;
+  margin-bottom: 40px;
+}
+
+.settings {
+  grid-area: settings;
+}
+.settings .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "n_input tel_input" "submit submit";
+  place-items: center;
+  row-gap: 20px;
+}
+.settings .input_name {
+  grid-area: n_input;
+}
+.settings .input_name input {
+  width: 100%;
+  background: #1d74b6;
+  color: white;
+  padding: 10px 0 10px 5px;
+}
+.settings .input_name input::placeholder {
+  color: white;
+}
+.settings .input_tel {
+  grid-area: tel_input;
+}
+.settings .input_tel input {
+  width: 100%;
+  background: #1d74b6;
+  color: white;
+  padding: 10px 0 10px 5px;
+}
+.settings .input_tel input::placeholder {
+  color: white;
+}
+.settings .add_btn {
+  grid-area: submit;
+  width: 50%;
+}
+.settings .add_btn input {
+  cursor: pointer;
+  width: 100%;
+  background: #1d74b6;
+  color: white;
+  padding: 10px 0 10px 5px;
+}
+.settings .alert_section {
+  position: absolute;
+  padding: 0 20px;
+  left: 0;
+  margin-left: 20px;
+  top: 45%;
+  width: 200px;
+  height: 200px;
+  background: green;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  text-align: left;
+}
+.settings .alert_section .alert_message {
+  color: whitesmoke;
+}
+
+.table_column {
+  display: flex;
+}
+
+.name_row {
+  height: 100px;
+  width: 400px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "edit del" "names names";
+  place-items: center;
+}
+.name_row .textarea {
+  text-align: center;
+  width: 200px;
+  grid-area: names;
+}
+.name_row .edit {
+  grid-area: edit;
+}
+.name_row .del {
+  grid-area: del;
+}
+.name_row .save {
+  grid-area: save;
+}
+.name_row button {
+  width: 100px;
+  height: 25px;
+}
+
+.tel_row {
+  height: 100px;
+  width: 400px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "edit del" "tel tel";
+  place-items: center;
+}
+.tel_row .textarea {
+  text-align: center;
+  width: 200px;
+  grid-area: tel;
+}
+.tel_row .edit {
+  grid-area: edit;
+}
+.tel_row .del {
+  grid-area: del;
+}
+.tel_row .save {
+  grid-area: save;
+}
+.tel_row button {
+  width: 100px;
+  height: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
